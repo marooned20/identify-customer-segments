@@ -1,0 +1,3 @@
+*.csv
+Data_Dict*
+.ipynb_*
