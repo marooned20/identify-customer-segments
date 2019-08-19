@@ -163,13 +163,13 @@ def scree_plot(pca):
     ind = np.arange(num_components)
     vals = pca.explained_variance_ratio_
  
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(20, 8))
     ax = plt.subplot(111)
     cumvals = np.cumsum(vals)
     ax.bar(ind, vals)
     ax.plot(ind, cumvals)
     for i in range(num_components):
-        ax.annotate(r"%s%%" % ((str(vals[i]*100)[:4])), (ind[i]+0.2, vals[i]), va="bottom", ha="center", fontsize=12)
+        ax.annotate(r"%s%%" % ((str(vals[i]*100)[:4])), (ind[i], vals[i]), va="bottom", ha="center", fontsize=5)
  
     ax.xaxis.set_tick_params(width=0)
     ax.yaxis.set_tick_params(width=2, length=12)
