@@ -1,3 +1,5 @@
 *.csv
 Data_Dict*
 .ipynb_*
+__pycache__
+*/*pyc
